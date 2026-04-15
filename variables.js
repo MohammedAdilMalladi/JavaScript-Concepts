@@ -76,6 +76,6 @@
 // }
 // console.log(x); // Output: 10, because var is function scoped, so it is accessible within the block it is declared in, and it will print the value of x which is 10.
 
-const obj = { name: "Adil" };
-obj.name = "Ali";
-console.log(obj.name); // Output: "Ali", because const only prevents reassignment of the variable itself, but it does not prevent modification of the properties of an object. In this case, we are modifying the name property of the obj object, which is allowed even though obj is declared as a const.
+// const obj = { name: "Adil" };
+// obj.name = "Ali";
+// console.log(obj.name); // Output: "Ali", because const only prevents reassignment of the variable itself, but it does not prevent modification of the properties of an object. In this case, we are modifying the name property of the obj object, which is allowed even though obj is declared as a const.
