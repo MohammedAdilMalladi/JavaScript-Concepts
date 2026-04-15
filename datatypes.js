@@ -49,3 +49,6 @@
 //     console.log("Hello!");
 // }
 // greet(); // Hello!
+
+// let str = "Adil";
+// console.log(typeof str);
