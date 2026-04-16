@@ -105,4 +105,4 @@ function getDayType(day) {
 }
 
 console.log(getDayType("Saturday")); // Weekend
-console.log(getDayType("Monday"));   // Weekday
+console.log(getDayType("Monday"));   // Weeday
