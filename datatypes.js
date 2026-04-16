@@ -12,43 +12,43 @@
 //     - Function: Represents a reusable block of code that performs a specific task. Example: function greet() { console.log("Hello!"); }
 //     - Date: Represents a specific point in time. Example: new Date()
     
-// let name = "Brendan";
-// console.log(name); //string
+let name = "Brendan";
+console.log(name); //string
 
-// let number = 42;
-// console.log(number); //number
+let number = 42;
+console.log(number); //number
 
-// let isLoggedIn = true;
-// console.log(isLoggedIn); //boolean
+let isLoggedIn = true;
+console.log(isLoggedIn); //boolean
 
-// let x;
-// console.log(x); //undefined
+let x;
+console.log(x); //undefined
 
-// let data = null;
-// console.log(data); //null
+let data = null;
+console.log(data); //null
 
-// let num = 12345678901234567890n; // BigInt
-// console.log(num); 
+let num = 12345678901234567890n; // BigInt
+console.log(num); 
 
-// let id = Symbol('id');
-// console.log(id); // Symbol(id)
+let id = Symbol('id');
+console.log(id); // Symbol(id)
 
 
 // Non-primitive data types:
 
-// let person = {
-//     name: "Alice",
-//     age: 30
-// };
-// console.log(person); // Object
+let person = {
+    name: "Alice",
+    age: 30
+};
+console.log(person); // Object
 
-// let numbers = [1, 2, 3, 4, 5];
-// console.log(numbers); // Array
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers); // Array
 
-// function greet() {
-//     console.log("Hello!");
-// }
-// greet(); // Hello!
+function greet() { //function
+    console.log("Hello!");
+}
+greet(); // Hello!
 
-// let str = "Adil";
-// console.log(typeof str);
+let str = "Adil";
+console.log(typeof str); //typeof operator
