@@ -1,170 +1,77 @@
 
-// # JavaScript Operators Guide
+// // # JavaScript Operators Guide
 
-// JavaScript provides several types of operators used to perform operations on variables and values.
-// Operators are symbols used to perform operations on values (operands).
+// // JavaScript provides several types of operators used to perform operations on variables and values.
+// // Operators are symbols used to perform operations on values (operands).
 
-// ---
+// //Arithmetic operators
+// let a = 20, b = 10;
+// let sum = a + b;
+// console.log(`Additon of two numbers: ${sum}`);
+// let c = 20, d = 10;
+// let sub = c - d;
+// console.log("Subtraction of two numbers: ", sub);
+// let e = 2, f = 5;
+// let mul = e * f;
+// console.log("Multiplication of two numbers: ", mul);
+// let g = 5, h = 10;
+// let div = g / h;
+// console.log("Division of Two numbers", div);
+// let i = 2, j = 3;
+// let mod = i % j;
+// console.log("Modulus of two numbers: ", mod);
+// let l = 3, k = 6;
+// let expo = l ^ k;
+// console.log("Exponentiation of two numbers: ", expo);
 
-// # 1. Arithmetic Operators
+//Assignment Operators
+// let a = 10; Simple assignment operator
+// let a = 10, b = 5;
+// a += b;
+// console.log("Addition Assignment Operator: ", a);
+// a -= b;
+// console.log("Subtraction Assignment Operator: ", a);
+// a *= b;
+// console.log("Multiplication Assignement operator: ", a);
+// a /= b;
+// console.log("Division Assignment Operator: ", a);
+// a **= b;
+// console.log("Exponentiation Assignment Operator: ", a);
+// a %= b;
+// console.log("Modulus/Remainder Assignment operator: ", a);
 
-// Used for mathematical calculations.
+//Comparison operators
+// console.log("1.", 10 > 5); //true
+// console.log("2.", 10 < 5); //false
+// console.log("3.", 50 >= 50); //true
+// console.log("4.", 90 <= 99); //true
+// console.log("5.", 5 != 5); //false
+// console.log("6.", 10 !== "10"); //true 
+// console.log("7.", 10 == "10"); // true
+// console.log("8.", 10 === 10); //true
 
-// | Operator | Description | Example |
-// |----------|-------------|--------|
-// | `+` | Addition | `5 + 2 = 7` |
-// | `-` | Subtraction | `5 - 2 = 3` |
-// | `*` | Multiplication | `5 * 2 = 10` |
-// | `/` | Division | `10 / 2 = 5` |
-// | `%` | Modulus (Remainder) | `5 % 2 = 1` |
-// | `**` | Exponentiation | `2 ** 3 = 8` |
+// Logical Operators: Logical operators are used to combine multiple conditions and return true/false (or actual values in JS).
+// AND (&&) Short-Circuit
+// console.log(true && "Hello");   // "Hello"
+// console.log(false && "Hello");  // false
 
-// ---
+// Explanation:
+// If first is false → stops there
+// If first is true → returns second value
 
-// # 2. Assignment Operators
+// let age = 18, HasId = true;
+// console.log(age >= 18 && HasId); // true / Logical AND operator returns true if both values are true else false
+// console.log(age > 18 || !HasId); // false / Logical OR operator returns true if any value is true else false
+// console.log(!HasId);  // false / reverses the values turns true into false and false into true
 
-// Used to assign values to variables.
-
-// | Operator | Example | Equivalent |
-// |----------|--------|-------------|
-// | `=` | `x = 5` | assign 5 to x |
-// | `+=` | `x += 2` | `x = x + 2` |
-// | `-=` | `x -= 2` | `x = x - 2` |
-// | `*=` | `x *= 2` | `x = x * 2` |
-// | `/=` | `x /= 2` | `x = x / 2` |
-// | `%=` | `x %= 2` | `x = x % 2` |
-
-// ---
-
-// # 3. Comparison Operators
-
-// Used to compare values.
-
-// | Operator | Description | Example |
-// |----------|-------------|--------|
-// | `==` | Equal (loose equality) | `5 == "5" → true` |
-// | `===` | Strict equality | `5 === "5" → false` |
-// | `!=` | Not equal | `5 != 6 → true` |
-// | `!==` | Strict not equal | `5 !== "5" → true` |
-// | `>` | Greater than | `5 > 3 → true` |
-// | `<` | Less than | `5 < 3 → false` |
-// | `>=` | Greater or equal | `5 >= 5 → true` |
-// | `<=` | Less or equal | `5 <= 3 → false` |
-
-// ---
-
-// ## 🔥 Important: `==` vs `===`
-
-// ### `==` (Loose Equality)
-// - Compares values **after type conversion**
-// - Performs **type coercion**
-// - Can lead to unexpected results
-
-// Example:
-// ```js
-// 5 == "5"   // true
-// 0 == false // true
-// ````
-
-// ---
-
-// ### `===` (Strict Equality)
-
-// * Compares **value AND type**
-// * No type conversion
-// * Recommended in modern JavaScript
-
-// Example:
-
-// ```js
-// 5 === "5"   // false
-// 5 === 5     // true
-// ```
-
-// ---
-
-// ### 🚀 Best Practice:
-
-// Always prefer `===` unless you specifically need type coercion.
-
-// ---
-
-// # 4. Logical Operators
-
-// Used for combining conditions.
-
-// | Operator | Description | Example                 |    |       |   |               |
-// | -------- | ----------- | ----------------------- | -- | ----- | - | ------------- |
-// | `&&`     | AND         | `true && false → false` |    |       |   |               |
-// | `        |             | `                       | OR | `true |   | false → true` |
-// | `!`      | NOT         | `!true → false`         |    |       |   |               |
-
-// ---
-
-// # 5. Bitwise Operators
-
-// Operate on binary numbers.
-
-// | Operator | Description |    |
-// | -------- | ----------- | -- |
-// | `&`      | AND         |    |
-// | `        | `           | OR |
-// | `^`      | XOR         |    |
-// | `~`      | NOT         |    |
-// | `<<`     | Left shift  |    |
-// | `>>`     | Right shift |    |
-
-// ---
-
-// # 6. Ternary Operator
-
-// Short form of `if-else`.
-
-// ```js
-// condition ? expression1 : expression2;
-// ```
-
-// Example:
-
-// ```js
+//Ternary Operator
 // let age = 18;
-// let result = (age >= 18) ? "Adult" : "Minor";
-// ```
+// let result = age >= 18 ? "Adult": "Minor";
+// console.log(result); //Adult
 
-// ---
-
-// # 7. Type Operators
-
-// | Operator     | Description        |
-// | ------------ | ------------------ |
-// | `typeof`     | Returns data type  |
-// | `instanceof` | Checks object type |
-
-// Example:
-
-// ```js
-// typeof 123        // "number"
-// [] instanceof Array // true
-// ```
-
-// ---
-
-// # Summary
-
-// * Use arithmetic operators for math
-// * Use comparison operators for conditions
-// * Always prefer `===` over `==`
-// * Use logical operators for combining conditions
-// * Use ternary operator for short conditions
-
-// ```
-
-// ---
-
-// If you want, I can also:
-// ✅ :contentReference[oaicite:0]{index=0}  
-// ✅ :contentReference[oaicite:1]{index=1}  
-// ✅ :contentReference[oaicite:2]{index=2}  
-// ✅ Or :contentReference[oaicite:3]{index=3}
-// ```
-
+//type operators
+// console.log(typeof 10); //number
+// let obj = {
+//     name: "adil"
+// };
+// console.log(obj instanceof Object); //true
