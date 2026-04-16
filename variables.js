@@ -1,3 +1,9 @@
+
+alert("This method displays an alert message on the screen");
+
+let a = prompt("Enter your name:  ");
+console.log("Entered name is:  "+a);
+
 var a = 10;
 a = 20;
 a = 30; 
