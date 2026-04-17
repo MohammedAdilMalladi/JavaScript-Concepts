@@ -1,31 +1,37 @@
-let arr = [1,2,3,4,5,6];
+//What is Array - An array is a collection of multiple values stored in a single variable
+
+// let arr = [1,2,3,4,5,6]; //array creation
 console.log(arr);
-console.log(arr[0]);
+console.log(arr[0]); //accessing array elements
 console.log(arr[1]);
 console.log(arr[2]);
 console.log(arr[3]);
 console.log(arr[4]);
 console.log(arr[5]);
 console.log(typeof arr); //returns the type of array as object in javascript.
+console.log(Array.isArray(arr)); //true //to check array's type
 
-console.log(arr.length);
+console.log(arr.length); //length is used to check the array size
 
-console.log(arr.toString());
+console.log(arr.toString()); //used to convert array elements into string
+console.log(String(arr)); //toString and String() works the same
 
 let a = ["Harry", "Adil", "Rahul", "Rohan"];
-console.log(a.join(" - "));
+console.log(a.join(" - ")); //Harry-Adil-Rahul-Rohan //joins elements of array
+// if array is not structured when printing in the console using console.log and you want to print it in one line use process.stdout.write(arr.toString); but convert the array to string because process.stdout.write only accepts or works on string and buffer and the other way is use join console.log(arr.join(" "));
 
+//Important array methods
 console.log(arr.pop()); //removes the element from the end and returns the popped element
 console.log(arr);
 
-console.log(arr.push(100)); // adds an element at the end of the array and returns the number of elements in an array after pushing
+console.log(arr.push(100)); // adds an element at the end of the array and returns all the elements of array after pushing
 console.log(arr);
 arr.push("Adil");
 console.log(arr);
 console.log(arr.length);
 
 
-arr.shift(); // removes first element from the array
+arr.shift(); // removes first element from the array and returns the removed element
 console.log(arr);
 
 arr.unshift("Adil");// adds first element in the array
