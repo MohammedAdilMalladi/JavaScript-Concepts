@@ -53,12 +53,19 @@
 // arr.reverse();
 // console.log(arr);
 
-let arr = [1,2,3,4,5,6,7,8]; //splice operation performs insertion and deletion from array by specifying first the index number of then the number of deletion and insertion, incase of insertion we need to pass the two mandatory values, and after with the elements we want to add to the specific position in an array.
-arr.splice(3,2);
-console.log(arr);
-arr.splice(3, 3, 47, 44, 55);
-console.log(arr);
+// let arr = [1,2,3,4,5,6,7,8]; //splice operation performs insertion and deletion from array by specifying first the index number of then the number of deletion and insertion, incase of insertion we need to pass the two mandatory values, and after with the elements we want to add to the specific position in an array.
+// arr.splice(3,2);
+// console.log(arr);
+// arr.splice(3, 3, 47, 44, 55);
+// console.log(arr);
 
 // const arr = [1,2,3,4,5,6]; //slices out the elements into new array or creates new array.
 // const arr2 = arr.slice(2);
 // console.log(arr2);
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// console.log(arr.includes(2)); //includes() method checks if value exists returns true or false
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// arr.push(7);
+// console.log(arr);
