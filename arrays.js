@@ -66,6 +66,5 @@
 // let arr = [1, 2, 3, 4, 5, 6];
 // console.log(arr.includes(2)); //includes() method checks if value exists returns true or false
 
-// let arr = [1, 2, 3, 4, 5, 6];
-// arr.push(7);
-// console.log(arr);
+// console.log("hello".indexOf("o")); //4  returns the index number of the element
+
