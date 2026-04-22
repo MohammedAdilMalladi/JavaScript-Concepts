@@ -9,7 +9,7 @@ console.log(newArr);
 
 newArr = arr.map((value)=>{ //with using map function to create or move elements to new array
     return value**2;
-})
+});
 
 console.log(newArr);
 
