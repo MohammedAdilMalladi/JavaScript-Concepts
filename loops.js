@@ -85,3 +85,7 @@ for(let i = 0; i <= 10; i++){
     if(i % 2 !== 0) // for odd numbers
         console.log(i);
 }
+
+//forEach loop - forEach() is used to iterate over an array and perform an action on each element.
+let arr = [8, 9, 10];
+arr.forEach(num => console.log(num));
