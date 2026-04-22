@@ -1,37 +1,42 @@
-let arr = [1,2,3,4,5,6,7,8];
-let newArr = [];
-for (let index = 0; index < arr.length; index++){  //without using map function to create new array.
-    const element = arr[index];
-    newArr.push(element**2);
-}
+// map() - map() creates a new array by applying a function to every element of the original array.
 
-console.log(newArr);
+// syntax:
+// array.map((element, index, array) => {
+//   return newValue;
+// });
 
-newArr = arr.map((value)=>{ //with using map function to create or move elements to new array
-    return value**2;
-});
+// example: 
+let arr = [1, 2, 3, 4, 5, 6];
+let result = arr.map(num => num * 2);
+console.log(result); //[ 2, 4, 6, 8, 10, 12];
 
-console.log(newArr);
+// filter() - filter() creates a new array with elements that satisfy a condition
+// syntax: 
+// array.filter((element, index, array) => {
+//   return condition;
+// });
 
-const greaterThanSeven = (e)=>{
-    if(e > 7){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
+// example: 
+let arr = [1, 2, 3, 4];
+let result = arr.filter(num => num % 2 === 0); // checks each element and keeps only those that return true
+console.log(result); //[2, 4]
 
-console.log(arr.filter(greaterThanSeven)); // filter operation is used to filter an array with values that passes a test and creates a new array.
+// reduce() - reduce() reduces an array into a single value
+// syntax: 
+// array.reduce((accumulator, currentValue) => {
+//   return updatedValue;
+// }, initialValue);
 
-let arr2 = [1,2,3,4,5];
+// accumulator → stores result
+// currentValue → current element
+// Runs through entire array
 
-const red = (a, b) =>{
-    return a * b;
-}
+// example: 
+let arr = [1, 2, 3, 4];
+let sum = arr.reduce((acc, curr) => acc + curr, 0);
+console.log(sum); //10
 
-console.log(arr2.reduce(red)); //reduce method reduces an array to a single value and it returns a number 
-
-let string = "harry";
-str2 = Array.from(string); // Array.from use case defines that it converts objects or strings into arrays.
-console.log(str2);
+// Conclusion
+// map() = applies a function to original array and creates a new array
+// filter() = implemented on condition and returns a new array
+// reduce() = Use when you want to have a single result such as sum values, multiply values, and build single result 
