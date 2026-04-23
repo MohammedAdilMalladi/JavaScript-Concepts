@@ -52,4 +52,4 @@ console.log(str.endsWith("!")); //true
 console.log(str.charAt("10")); //d
 
 // 13. length() - Returns the total number of characters in a string.
-console.log(str.length); //12
+console.log(str.length);
