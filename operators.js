@@ -81,4 +81,4 @@ console.log("Hi " + "Adil");
 
 // Relational operators
 let obj = { name: "adil"};
-console.log("name" in obj); true 
+console.log("name" in obj); //true 
