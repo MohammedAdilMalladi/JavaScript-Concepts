@@ -3,5 +3,5 @@
 
 //Selecting elements
 // 1. getElementById() - Selects an element using its id
-let element = document.getElementById("header");
-console.log(element);
+let h1 = document.getElementById("header");
+console.log(h1);
