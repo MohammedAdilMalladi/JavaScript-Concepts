@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Event Handling in JS</title>
+    <style>
+        .flex-box{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 100%;
+        }
+        .flex-box button{
+            margin: 10px 0;
+            width: 100px;
+        }
+
+        .flex-box input{
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-box">
+
+    <form id="myform">
+        <input type="text" placeholder="Enter name">
+        <button type="submit">submit</button>
+    </form>
+
+    <input type="text" id="change-form-event" placeholder="Type and click outside">
+    
+    <input type="text" id="focus-form-event" placeholder="click here">
+
+    <input type="text" id="blurInput" placeholder="Click and leave">
+
+   <button onclick="alert('this is alert message about button was clicked')">inline event click</button> <!-- inline event not recommended because it's not scalable-->
+
+   <button class="click">Sinlge Click</button>
+
+   <button class="double-click">Double click!</button>
+
+   <button class="eventobject">Event Object</button>
+
+   <input id="name">
+
+   <button class="mouse-events">Mouse events</button>
+   </div>
+    <script src="events.js"></script>
+</body>
+</html>
