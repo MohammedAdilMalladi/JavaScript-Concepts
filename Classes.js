@@ -64,7 +64,7 @@ class Admin extends User{
         super(name, email);
     }
     editData(){
-        data = "new data";
+        data = "Admin can change data";
     }
 }
 
