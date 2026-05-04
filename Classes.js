@@ -17,19 +17,58 @@
 // Defender.startengine();
 // Defender.stop();
 
+// this keyword - the object that is currently executing the function, the object that calls the function
+
 // inheritance
-class Base{
+class Person{
+    constructor(name){
+        this.species = "homo sapiens";
+        this.name = name;
+    }
     parent(){
         console.log("this is parent class"); //this is parent class
     }
 }
 
-class Derived extends Base{
+class Engineer extends Person{
+    constructor(name){
+        super(name); //must be used in child class constructor to invoke parent class constructor
+    }
     child(){
         console.log("This is child class"); //this is chid class
     }
 }
 
-let d = new Derived();
-d.parent();
-d.child();
+//if parent and child class have same function name then child class's function overrides parent class's function
+
+let e = new Engineer("Adil");
+e.parent();
+e.child();
+
+// Practice questions
+let data = "secret website data";
+class User{
+    constructor(name, email){
+        this.name = name;
+        this.email = email;
+    }
+
+    viewData(){
+        console.log("DATA: ", data);
+    }
+
+}
+
+class Admin extends User{
+    constructor(name, email){
+        super(name, email);
+    }
+    editData(){
+        data = "new data";
+    }
+}
+
+let u1 = new User("User1", "abc@gmail.com");
+let u2 = new User("User2", "xyz@gmail.com");
+
+let admin = new Admin("Admin", "jkl@gmail.com");
