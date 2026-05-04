@@ -114,3 +114,31 @@ let blurInput = document.getElementById("blurInput");
 blurInput.addEventListener("blur", () => {
     console.log("Input lost focus");
 });
+
+// Event flow: Event flow defines how events travel in DOM
+// 2 types of event flows: 
+// 1.Event bubbling(Default): Event goes from child → parent(value is false by default)
+// 2.Event Capturing: Event goes from parent → child
+
+let parent = document.getElementById("parent");
+let child = document.getElementById("child");
+
+//Event bubbling
+child.addEventListener("click", () => {
+    console.log("Child"); //the output is Child & Parent(first it logs Child and after it logs Parent to the console as this is by default false even if we don't know specify value at the end and it's known as Event bubbling)
+});
+
+//Event capturing
+parent.addEventListener("click", () => {
+    console.log("Parent"); 
+}, true); //When atlast the value is specified as true then the output is Parent & Child(first it logs Parent and after it logs Child to the console as this is known as Event capturing)
+
+//stopPropagation() - Stops event from moving to parent elements.
+parent.addEventListener("click", () => {
+    console.log("Parent clicked"); //Parent clicked
+});
+
+child.addEventListener("click", (e) => {
+    e.stopPropagation(); // this stops 
+    console.log("Child clicked"); //Child clicked
+});
