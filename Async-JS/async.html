@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous Programming in JS</title>
+</head>
+<body>
+    <script>
+        // Difference between synchronous and Asynchronous programming
+// 1. Synchronous programming - Synchronous means the code runs in a particular sequence given in the program each instruction waits for the previous instruction to complete it's execution
+
+// 2. Asynchronous Programming - Due to synchronous programming, some of the important instructions get blocked due to some previous instructions, which causes delay in the UI. Asynchronous code execution allows to execute next instructions immediately and does not block the flow
+
+//Asynchronous programming example
+
+// setInterval - setInterval() is used to execute a function repeatedly at a specified interval (in milliseconds).
+// setInterval(() => {
+//     console.log("Hello");
+// }, 4000);
+
+// setTimeout - setTimeout() is used to execute a function once after a specified delay (in milliseconds).
+// setTimeout(() => {
+//     console.log("Async JS");
+// }, 2000);
+
+// callback - callback is a function passed as an argument to another function 
+// function sum(a, b) {
+//     return a + b;
+// }
+
+// function calculator(a, b, sumCallback) {
+//     console.log(sumCallback(a, b));
+// };
+
+// calculator(5, 5, sum);
+
+//callback hell - Nested callbacks stacked below one another forming a pyramid structure (Pyramid of Doom), This style of programming becomes difficult to understand & manage
+
+function getData(dataId, getNextData) {
+    setTimeout(() => {
+        console.log("data ", dataId);
+        if(getNextData){
+            getNextData();
+        }
+    }, 2000);
+}
+
+//callback hell
+getData(1, () => {
+    console.log("fetching data 2");
+    getData(2, () => {
+        console.log("fetching data 3");
+        getData(3, () => {
+            console.log("fetching data 4");
+            getData(4);
+        });
+    });
+});
+    </script>
+</body>
+</html>
