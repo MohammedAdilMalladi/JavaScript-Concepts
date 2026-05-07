@@ -19,7 +19,7 @@
 
 // this keyword - the object that is currently executing the function, the object that calls the function
 
-// inheritance
+// inheritance - inheritance can be defined as accessing the properties and methods of parent class into child class
 class Person{
     constructor(name){
         this.species = "homo sapiens";
