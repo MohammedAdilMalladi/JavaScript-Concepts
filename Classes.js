@@ -45,7 +45,7 @@ let e = new Engineer("Adil");
 e.parent();
 e.child();
 
-// Practice questions
+// Practice question 1
 let data = "secret website data";
 class User{
     constructor(name, email){
@@ -59,6 +59,7 @@ class User{
 
 }
 
+//Practice question 2
 class Admin extends User{
     constructor(name, email){
         super(name, email);
