@@ -1,5 +1,5 @@
-
-alert("This method displays an alert message on the screen");
+//alert() - alert() method is used to display an alert message on the browser screen
+alert("Hello");
 
 let a = prompt("Enter your name:  ");
 console.log("Entered name is:  "+a);
