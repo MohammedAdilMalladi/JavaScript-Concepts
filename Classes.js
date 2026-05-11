@@ -73,3 +73,4 @@ let u1 = new User("User1", "abc@gmail.com");
 let u2 = new User("User2", "xyz@gmail.com");
 
 let admin = new Admin("Admin", "jkl@gmail.com");
+let admin2 = new Admin("Admin2", "jsuser@gmail.com");
