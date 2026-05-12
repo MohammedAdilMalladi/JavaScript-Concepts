@@ -76,7 +76,7 @@ sayHi(); //Hi
 
 function greet(fn){
     fn();
-}
+};
 
 greet(function(){
     console.log("Hello"); //Hello
@@ -85,11 +85,11 @@ greet(function(){
 // 10.Callback functions - function passed as arguments
 function fn(callback){
     callback();
-}
+};
 
 fn(() => console.log("Callback function"));
 
-// 11.immediately invoked function(IIFE)
+// 11.immediately invoked function(IIFE) - this function runs immediately don't need to call unlike we do for other functions. It only runs one time
 (function(){
     console.log("I run immediately");
 })();
