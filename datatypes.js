@@ -35,20 +35,23 @@ console.log(id); // Symbol(id)
 
 
 // Non-primitive data types:
-
+// 1. Object - Object in JavaScript can be defined as key-value pairs
 let person = {
     name: "Alice",
     age: 30
 };
-console.log(person); // Object
+console.log(person);
 
+//Array - Array is a collection of elements that has the same type
 let numbers = [1, 2, 3, 4, 5];
-console.log(numbers); // Array
+console.log(numbers); 
 
-function greet() { //function
+// function() -  function is used to perform a specific task
+function greet() { 
     console.log("Hello!");
 }
 greet(); // Hello!
 
+// string - Collection of Characters enclosed within double quotes is known as String
 let str = "Adil";
 console.log(typeof str); //typeof operator
