@@ -46,7 +46,7 @@ user.greet(); //Hello
 // Built-in Object Methods
 // 1. Object.keys() - Returns all keys of an object as an array.
 let employee = {
-    name: "Rahul",
+    name: "Priya",
     empID: 14123,
     department: "HR"
 };
