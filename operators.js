@@ -72,7 +72,8 @@ console.log(result); //Adult
 // type operators
 console.log(typeof 10); //number
 let obj = {
-    name: "adil"
+    name: "adil",
+    EmpId: 12135
 };
 console.log(obj instanceof Object); //true
 
